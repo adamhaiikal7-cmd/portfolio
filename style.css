@@ -13,19 +13,31 @@ body {
 }
 
 /* NAVBAR */
-nav {
+  nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 60px;
+
   background: rgba(11, 26, 47, 0.75);
   backdrop-filter: blur(10px);
+
   border-bottom: 1px solid rgba(255,255,255,0.05);
+
   z-index: 1000;
+
+  transition: transform 0.4s ease;
+}
+
+/* HIDE NAVBAR */
+nav.hide-nav {
+  transform: translateY(-100%);
 }
 
 nav .logo {
@@ -126,9 +138,7 @@ nav ul li a:hover {
   border-radius: 14px;
 }
 
-/* ========================= */
 /* SKILLS (RESTORED CLEAN) */
-/* ========================= */
 
 #skills {
   padding: 180px 60px;
@@ -236,9 +246,7 @@ nav ul li a:hover {
   background-color: #163050;
 }
 
-/* ========================= */
 /* FEATURED WORK (FIXED) */
-/* ========================= */
 
 #projects {
   padding: 140px 60px;
@@ -362,9 +370,7 @@ nav ul li a:hover {
   background-image: url("assets/images/ai.jpg");
 }
 
-/* ========================= */
 /* EDUCATION */
-/* ========================= */
 
 #education {
   padding: 220px 60px 140px;
@@ -462,9 +468,8 @@ nav ul li a:hover {
   max-width: 350px;
   text-align: justify;
 }
-/* ========================= */
+
 /* CONTACT */
-/* ========================= */
 
 #contact {
   padding: 40px 30px 20px;
@@ -546,6 +551,12 @@ nav ul li a:hover {
 /* RESUME LINK */
 .resume-link {
   text-decoration: none;
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* HOVER */
