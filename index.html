@@ -266,15 +266,23 @@
 
   <div class="contact-container">
 
-    <!-- EMAIL -->
-    <div class="contact-card">
-      <div class="contact-icon">
-        <i data-lucide="mail"></i>
-      </div>
+<!-- EMAIL -->
+<div class="contact-card">
 
-      <p class="contact-label">EMAIL</p>
-      <p class="contact-info">adamhaiikal7@gmail.com</p>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adamhaiikal7@gmail.com"
+     target="_blank"
+     class="email-link">
+
+    <div class="contact-icon">
+      <i data-lucide="mail"></i>
     </div>
+
+    <p class="contact-label">EMAIL</p>
+    <p class="contact-info">adamhaiikal7@gmail.com</p>
+
+  </a>
+
+</div>
 
     <!-- PHONE -->
     <div class="contact-card">
@@ -328,6 +336,34 @@
     easing: 'ease-in-out',
     once: true,
     offset: 80
+  });
+</script>
+
+<!-- NAVBAR HIDE SCRIPT -->
+<script>
+  let lastScroll = 0;
+  const navbar = document.querySelector("nav");
+
+  // HIDE/SHOW ON SCROLL
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      navbar.classList.add("hide-nav");
+    } else {
+      navbar.classList.remove("hide-nav");
+    }
+
+    lastScroll = currentScroll;
+  });
+
+  // SHOW WHEN CURSOR AT TOP
+  document.addEventListener("mousemove", (e) => {
+    if (e.clientY < 80) {
+      navbar.classList.remove("hide-nav");
+    } else if (window.pageYOffset > 100) {
+      navbar.classList.add("hide-nav");
+    }
   });
 </script>
 
