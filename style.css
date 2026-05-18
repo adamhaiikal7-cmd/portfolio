@@ -563,3 +563,37 @@ nav ul li a:hover {
 .contact-info:hover {
   color: #40c4ff;
 }
+
+/* SCHOOL LOGO */
+
+.school-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.school-logo {
+  width: 90px;
+  height: 70px;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 8px;
+
+  backdrop-filter: blur(10px);
+
+  opacity: 0.95;
+
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.school-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
