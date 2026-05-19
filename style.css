@@ -573,6 +573,10 @@ nav ul li a:hover {
   gap: 22px;
 }
 
+.school-header h3 {
+  white-space: nowrap;
+}
+
 .school-logo {
   width: 90px;
   height: 70px;
@@ -590,6 +594,11 @@ nav ul li a:hover {
   opacity: 0.95;
 
   transition: 0.3s ease;
+  
+}
+
+.msu-logo {
+  transform: translateX(10px);
 }
 
 /* HOVER EFFECT */
