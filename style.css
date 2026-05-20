@@ -405,7 +405,9 @@ nav ul li a:hover {
 /* LEFT */
 .timeline-left {
   text-align: right;
-  padding-right: 70px;
+  padding-right: 0px;
+
+  transform: translateX(30px);
 }
 
 .timeline-left h3 {
@@ -467,6 +469,10 @@ nav ul li a:hover {
   opacity: 0.8;
   max-width: 350px;
   text-align: justify;
+}
+
+.spm-header {
+  margin-left: 40px;
 }
 
 /* CONTACT */
@@ -569,7 +575,6 @@ nav ul li a:hover {
 .school-header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 22px;
 }
 
@@ -598,11 +603,15 @@ nav ul li a:hover {
 }
 
 .msu-logo {
-  transform: translateX(10px);
+  transform: translateX(0px);
 }
 
 /* HOVER EFFECT */
 .school-logo:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.spm-header {
+  transform: translateX(110px);
 }
